@@ -1,5 +1,5 @@
 
-add(int, int): @ add subroutine performs basic addition arithmetic on two variable x & y
+add(int, int): 
         push    {r7}
         sub     sp, sp, #12
         add     r7, sp, #0

@@ -2,7 +2,7 @@ x:
         .word   14
 y:
         .word   7
-.LC0:
+.div:
         .string "The difference is %d\n"
 main:
         stp     x29, x30, [sp, -32]!

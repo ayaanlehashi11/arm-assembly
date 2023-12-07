@@ -2,7 +2,7 @@ x:
         .word   14
 y:
         .word   7
-.LC0:
+.sub:
         .ascii  "The difference is %d\012\000"
 main:
         push    {r7, lr}

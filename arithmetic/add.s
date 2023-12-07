@@ -3,7 +3,7 @@ x:
         .word   5
 y:
         .word   8
-.LC0:
+.sum:
         .string "The sum is %d\n"
 main:
         stp     x29, x30, [sp, -32]!

@@ -1,5 +1,5 @@
 @ the equivalent source code in c
-/**
+/*
 #include <stdio.h>
 int main(int argc , char ** argv)
 {
@@ -11,12 +11,12 @@ int main(int argc , char ** argv)
     }
     return 0;
 }
-**/
+*/
 
 
 
 
-.LC1:
+string:
         .string "%d"
 main:
         stp     x29, x30, [sp, -80]!
@@ -32,7 +32,7 @@ main:
         str     x1, [x0, 32]
         str     wzr, [sp, 76]
         b       .L2
-.L3:
+loop3:
         add     x1, sp, 32
         ldrsw   x0, [sp, 76]
         lsl     x0, x0, 2
@@ -44,14 +44,14 @@ main:
         ldr     w0, [sp, 76]
         add     w0, w0, 1
         str     w0, [sp, 76]
-.L2:
+loop2:
         ldr     w0, [sp, 76]
         cmp     w0, 9
         ble     .L3
         mov     w0, 0
         ldp     x29, x30, [sp], 80
         ret
-.LC0:
+array:
         .word   2
         .word   5
         .word   4

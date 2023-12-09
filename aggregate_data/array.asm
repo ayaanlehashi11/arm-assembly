@@ -1,17 +1,16 @@
-@ the equivalent source code in c
-/*
-#include <stdio.h>
-int main(int argc , char ** argv)
-{
-    int arr[10] = {2 , 5 , 4 , 7 , 1 , 0 , 6 , 8 , 9 , 3};
-    int i;
-    for(i = 0;i < 10;++i)
-    {
-        printf("%d" , &arr[i]);
-    }
-    return 0;
-}
-*/
+; the equivalent source code in c
+
+;  #include <stdio.h>
+;  int main(int argc , char ** argv)
+;  {
+;  int arr[10] = {2 , 5 , 4 , 7 , 1 , 0 , 6 , 8 , 9 , 3};
+;  int i;
+;  for(i = 0;i < 10;++i)
+;    {
+;        printf("%d" , &arr[i]);
+;   }
+;    return 0;
+;}
 
 
 
